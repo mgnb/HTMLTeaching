@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>带结构标签表格跨行跨列操作</title>
+</head>
+<body>
+
+<table border="6" bgcolor="#7fffd4" width="600px"
+       cellspacing="0" cellpadding="5" align="center">
+    <caption>插画师平均工资</caption>
+    <thead>
+    <tr bgcolor="#7cfc00" >
+        <th rowspan="2">城市</th>
+        <th colspan="2">2017年</th>
+        <th rowspan="2">2018年</th>
+        <th rowspan="2">2019年</th>
+    </tr>
+    <tr bgcolor="#ff8c00">
+        <th>上半年</th>
+        <th>下半年</th>
+    </tr>
+    </thead>
+
+    <tbody align="center" valign="middle">
+
+    <tr>
+        <td bgcolor="#ffebcd">北京</td>
+        <td>6000</td>
+        <td>9000</td>
+        <td>15000</td>
+        <td>20000</td>
+    </tr>
+
+    <tr>
+        <td bgcolor="#ffebcd">上海</td>
+        <td>6500</td>
+        <td>10000</td>
+        <td>16000</td>
+        <td>21000</td>
+    </tr>
+
+    </tbody>
+    <tfoot align="center" valign="middle">
+    <tr height="100px" >
+        <td bgcolor="#ffebcd">平均</td>
+        <td>2000</td>
+        <td>6000</td>
+        <td>8000</td>
+        <td>10000</td>
+    </tr>
+    </tfoot>
+</table>
+</body>
+</html>

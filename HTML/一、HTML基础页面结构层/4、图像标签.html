@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图像和超链接</title>
+</head>
+<body>
+<!--
+    语法：
+    <img src="" alt="" ../>
+    img属性：
+    属性              值       描述
+    Src(必写)         URL      显示图像的URL
+    alt              文字       图像代替文本
+    height           数值和百分比  图像的高
+    width            数值和百分比  图像的宽
+    %   相对父容器 图片占比
+
+    alt
+        - 当网速太慢
+        - src属性中的错误
+        - 浏览器禁用图像
+        - 用户无法查看图像alt 属性可以代替图像显示在浏览器中的内容
+    HTML路径
+            相对路径   图片相对与你做的网页路径
+            绝对路径   URL地址是从盘符开始写的路径
+            ../代表一个上一级，如上一级的上一级则表示为 ../../
+-->
+
+<!--
+ 1、图片与项目在同一目录下     <img src="1.jpg"/>
+ 2、图片在上一级目录中        <img src="../1.jpg"/>
+ 3、图片在下一级目录中        <img src="文件夹名/1.jpg"/>
+-->
+
+<!--绝对路径-->
+<!--<img src="Users/rabbit/Desktop/xiy.JPG" alt="">-->
+
+<!--相对路径-->
+<!--<img src="image/feij1i.JPG" width="400px" height="400px" alt="该图片显示异常...">-->
+<!--<br/>-->
+<!--相对路径-->
+<!--<img src="../img/xiyang.jpg" width="400px" height="400px" alt="该图片显示异常...">-->
+<!--<br/>-->
+<!--<img src="../img/xiyang.jpg" width="30%" height="40%" alt="该图片显示异常...">-->
+
+
+
+<!--
+  超链接标签
+   语法：<a href=""> 内容 </a>
+   href： 链接地址，可以是内部链接或外部链接
+
+   属性：
+            属性              描述
+            href            链接地址
+            target          链接的目标窗口_self  _blank  _top _parent
+            title           链接提示文子
+            name            链接命名
+-->
+
+<!--外部网址链接     站外链接  使用绝对路径-->
+<a href="https://www.baidu.com/">点我跳转百度</a>
+<br/>
+<!--图片链接外部网址-->
+<a href="https://www.baidu.com/"><img src="../img/xiyang.jpg" width="30%" height="40%" alt="该图片显示异常..."> </a>
+
+<br>
+
+<a href="#" target="_parent"><img src="../img/xiyang.jpg" width="30%" height="40%" alt="该图片显示异常..."> </a>
+<br>
+
+<a href="4.1、链接内部网页.html" target="_blank"><h2>画画教程</h2></a>
+<a href="4.1、链接内部网页.html" title="鼠标放在上面我有特效">点我跳转第二个页面</a>
+
+</body>
+</html>
